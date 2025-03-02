@@ -6,6 +6,9 @@ let totalCards = 6;
         const myCountElement = document.getElementById("myCount")
         const buttons = document.querySelectorAll(".completedBtn");
 
+        const logLeft = document.querySelector(".log-left");
+            const logRight = document.querySelector(".log-right");
+
         buttons.forEach(button => {
             button.addEventListener("click", function() {
                 if (!this.disabled) {
@@ -24,15 +27,47 @@ if (myCount > 28 || 29 < myCount){
 }
 
 
-
-              
-
+//hhjhjghhjjjjjj
 
 
 
+  // 6. Add task name with completion time to the right log
+  const taskName = button.closest(".card1").querySelector("h2").textContent;
+  const currentTime = new Date().toLocaleTimeString();
+  const taskLog = document.createElement("p");
+  taskLog.textContent = `${taskName} - Completed at: ${currentTime}`;
+  logRight.appendChild(taskLog);
 
+  // 7. Create "Clear History" button only once
+  if (!clearHistoryBtnExists) {
+    const clearHistoryBtn = document.createElement("button");
+    clearHistoryBtn.textContent = "Clear History";
+    clearHistoryBtn.classList.add("clear-history");
+    logLeft.appendChild(clearHistoryBtn);
+
+    clearHistoryBtn.addEventListener("click", function () {
+        logLeft.innerHTML = "";
+        logRight.innerHTML = "";
+        clearHistoryBtnExists = false; // Allow new button creation if needed
+    });
+
+    clearHistoryBtnExists = true;
+}
+
+          
+
+
+////kjkjkkkkkkkkkkk
             }
 
+////khbbb
+
+
+
+
+
+
+       //mahhjjj     
 
 
             });

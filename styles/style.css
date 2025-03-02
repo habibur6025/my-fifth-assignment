@@ -306,3 +306,16 @@ color: white;
     padding: 10px 20px;
     font-size: 1.2rem;
   }
+
+
+  .log-right {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.2rem;
+
+  }
+  .log-left{
+    margin-bottom: 40px;
+  }

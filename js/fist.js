@@ -27,3 +27,9 @@ function displayDate() {
 }
 
 displayDate(); //
+
+
+function clearDiv(){
+
+    document.getElementById("myDiv").innerHTML = "";
+}
