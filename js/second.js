@@ -35,7 +35,7 @@ if (myCount > 28 || 29 < myCount){
   const taskName = button.closest(".card1").querySelector("h2").textContent;
   const currentTime = new Date().toLocaleTimeString();
   const taskLog = document.createElement("p");
-  taskLog.textContent = `${taskName} - Completed at: ${currentTime}`;
+  taskLog.textContent = `You have completed the task ${taskName} at: ${currentTime}`;
   logRight.appendChild(taskLog);
 
   // 7. Create "Clear History" button only once
