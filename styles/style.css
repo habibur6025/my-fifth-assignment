@@ -100,19 +100,20 @@ font-weight: 700;
 
  width: 1536px;
 margin: auto;
-
+gap: 20px;
 margin-top: 20px;
 
 display: grid;
-grid-template-columns:80% 20%;
-gap: 20px;
+grid-template-columns:repeat(2,1160px 356px);
 
 
   }
 
   .task{
-
+  
+width: 1160px;
     background: rgb(255, 255, 255);
+    border-radius: 16px;
   }
 
 
@@ -157,6 +158,11 @@ border-radius: 12px;
   }
   .ca2 h2{
     color: white;
+  }
+  .ca2 a{
+text-decoration: none;
+color: white;
+
   }
   .ca2 img{
 
@@ -257,7 +263,8 @@ color: white;
   }
 /*this is basics code*/
   .activity{
-
+    
+border-radius: 16px;
     padding: 24px;
     background: rgb(255, 255, 255);
   }
@@ -281,4 +288,21 @@ gap: 10px;
 color: white;
     background: rgb(55, 82, 253);
     padding: 10px 20px;
+  }
+
+
+  .day{
+    font-weight: normal;
+  }
+
+
+  /*blogs html*/
+
+  .nav-cot button{
+
+    border-radius: 8px;
+color: white;
+    background: rgb(55, 82, 253);
+    padding: 10px 20px;
+    font-size: 1.2rem;
   }
