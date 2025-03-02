@@ -34,7 +34,8 @@ if (myCount > 28 || 29 < myCount){
   // 6. Add task name with completion time to the right log
   const taskName = button.closest(".card1").querySelector("h2").textContent;
   const currentTime = new Date().toLocaleTimeString();
-  const taskLog = document.createElement("p");
+  const taskLog = document.createElement("div");
+  taskLog.classList.add("log-entry");
   taskLog.textContent = `You have completed the task ${taskName} at: ${currentTime}`;
   logRight.appendChild(taskLog);
 
